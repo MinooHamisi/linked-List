@@ -9,6 +9,7 @@ int main()
 {
     list L;
     int N;
+    int Mm = 33;
     cout << "pleas Enter your list number and at the end enter a negative number to finish it: ";
     cin >> N;
     int i = 0;
