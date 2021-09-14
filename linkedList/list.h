@@ -11,6 +11,8 @@ public:
 	void AddToList(linkNode* N1);
 	void AddToList(int N1);
 	void PrintList();
+	void SortList();
+	int lenghth();
 
 };
 

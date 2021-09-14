@@ -57,3 +57,48 @@ void list::PrintList()
 		temp = temp->next;
 	}
 }
+
+void list::SortList()
+{
+	//ascending sort
+	linkNode* temp = this->head;
+	if (temp->next != NULL)
+	{
+		int dt; // temp for swaping data of linkNode
+		int max;
+		int n = this->lenghth();
+	
+		for (int i = 1;i <= n;i++)
+		{
+			//max = temp->data;
+			for (int j = 1;j <= n - i;j++)
+			{
+				if (temp->data > temp->next->data)//swap
+				{
+					dt = temp->data;
+					temp->data = temp->next->data;
+					temp->next->data = dt;
+				}
+				temp = temp->next;
+			}
+			temp = this->head;
+		}
+
+	}
+
+
+}
+
+int list::lenghth()
+{
+	if (this->head == NULL)
+		return 0;
+	linkNode* temp = this->head;
+	int i = 1;
+	while (temp->next!=NULL)
+	{
+		i++;
+		temp = temp->next;
+	}
+	return i;
+}

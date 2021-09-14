@@ -9,7 +9,7 @@ int main()
 {
     list L;
     int N;
-    cout << "pleas Enter your list number and at the end enter a negative number to finish it: ";
+    cout << "please Enter your list's number and at the end enter a negative number:\n ";
     cin >> N;
     int i = 0;
     while (N>=0)
@@ -18,6 +18,8 @@ int main()
         L.AddToList(N);
         cin >> N;
     }
+    cout<<"lenght of your list is: "<<L.lenghth()<<"\n";
+    L.SortList();
     if (i > 0)
     {
         L.PrintList();
