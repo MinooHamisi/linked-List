@@ -13,6 +13,6 @@ public:
 	void PrintList();
 	void SortList();
 	int lenghth();
-
+	bool find(int data);
 };
 

@@ -9,7 +9,7 @@ int main()
 {
     list L;
     int N;
-    cout << "please Enter your list's number and at the end enter a negative number:\n ";
+    cout << "please Enter your list's number and at the end enter a negative number:\n";
     cin >> N;
     int i = 0;
     while (N>=0)
@@ -22,8 +22,15 @@ int main()
     L.SortList();
     if (i > 0)
     {
+        cout << "your list has been sorted:\n";
         L.PrintList();
     }
+    cout << "find a data in the list: please enter a Number to know if it is in the list: ";
+    cin >> N;
+    if (L.find(N))
+        cout << "\nYES! there is in the list.";
+    else
+        cout << "\nNO! there is not in the list.";
     
     return 0;
 }

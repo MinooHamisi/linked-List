@@ -102,3 +102,17 @@ int list::lenghth()
 	}
 	return i;
 }
+
+bool list::find(int data)
+{
+	if (this->head == NULL)
+		return false;
+	//bool b = false;
+	linkNode* temp = this->head;
+	do {
+		if (temp->data == data)
+			return true;
+		temp = temp->next;
+	} while (temp != NULL);
+	return false;
+}
