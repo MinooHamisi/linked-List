@@ -16,7 +16,6 @@ int main()
     {
         i++;
         L.AddToList(N);
-        cout << "pleas Enter your list number and at the end enter a negative number to finish it: ";
         cin >> N;
     }
     if (i > 0)
